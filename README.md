@@ -5,12 +5,12 @@
 ### Course Repository · Maven Analytics
 **Statistical modeling, regularization & time-series forecasting with Python**
 
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![Statsmodels](https://img.shields.io/badge/Statsmodels-8B0000?style=flat-square&logo=python&logoColor=white)
 ![Prophet](https://img.shields.io/badge/Prophet-1E3A8A?style=flat-square&logo=facebook&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter_Lab-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Not_Started-lightgrey?style=flat-square)
+![Status](https://img.shields.io/badge/Status-In_Progress-lightgrey?style=flat-square)
 
 </div>
 
@@ -264,13 +264,11 @@ A mature workflow often uses Statsmodels to *understand* the data and Scikit-Lea
 ### Environment Setup
 ```bash
 # Create conda environment
-conda create -n regression-forecasting python=3.11 jupyter numpy pandas matplotlib seaborn scikit-learn statsmodels
+conda create -n regression-forecasting -c conda-forge python=3.12 jupyter numpy pandas matplotlib seaborn scikit-learn statsmodels prophet
 
 # Activate
 conda activate regression-forecasting
 
-# Install forecasting library
-pip install prophet
 ```
 
 <br><br>
