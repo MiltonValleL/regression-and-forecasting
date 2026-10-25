@@ -91,10 +91,10 @@ By the end of this course, you'll be able to:
 - [x] Setting up the modeling environment
 
 ### Module 2 — Regression 101
-- [ ] Goals & primary types of regression analysis
-- [ ] Prediction vs. inference
-- [ ] The regression modeling workflow (deep dive)
-- [ ] Key assumptions behind linear regression
+- [x] Goals & primary types of regression analysis
+- [x] Prediction vs. inference
+- [x] The regression modeling workflow (deep dive)
+- [x] Key assumptions behind linear regression
 
 ### Module 3 — Simple (Univariate) Linear Regression
 - [ ] Fitting OLS with Statsmodels
