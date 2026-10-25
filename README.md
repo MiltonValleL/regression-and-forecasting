@@ -85,10 +85,10 @@ By the end of this course, you'll be able to:
 > Status reflects real progress. Checkboxes and notebook names are placeholders to update as you advance — adjust the grouping to match the course's actual section layout.
 
 ### Module 1 — Intro to Data Science with Python
-- [ ] The data science & machine learning landscape
-- [ ] The data science workflow (each phase)
-- [ ] Essential Python skills review for modeling
-- [ ] Setting up the modeling environment
+- [x] The data science & machine learning landscape
+- [x] The data science workflow (each phase)
+- [x] Essential Python skills review for modeling
+- [x] Setting up the modeling environment
 
 ### Module 2 — Regression 101
 - [ ] Goals & primary types of regression analysis
