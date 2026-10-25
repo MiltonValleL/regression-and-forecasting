@@ -1,0 +1,14 @@
+name: maven-ml
+channels:
+  - defaults
+dependencies:
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pandas
+  - prophet
+  - python=3.12
+  - scikit-learn
+  - seaborn
+  - statsmodels
+prefix: /home/miltonvalle/anaconda3/envs/maven-ml
