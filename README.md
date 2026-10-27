@@ -104,17 +104,19 @@ By the end of this course, you'll be able to:
 - [ ] Preparing the data for modeling
 
 ### Module 4 — Simple (Univariate) Linear Regression
-- [ ] Fitting OLS with Statsmodels
-- [ ] Interpreting slope, intercept & R²
-- [ ] Reading p-values and confidence intervals
-- [ ] Residual analysis and assumption checks
+- [ ] Simple linear regression overview
+- [ ] Least squared error
+- [ ] Linear regression in Python and in Statsmodels
+- [ ] Interpreting the model, making predictions
+- [ ] R-Squared, Hipothesis Test, F-Test
+- [ ] Coefficient estimates & P-Values, residual plots
 
 ### Module 5 — Multiple Linear Regression
-- [ ] Fitting models with multiple predictors
-- [ ] Adjusted R² and model comparison
-- [ ] Categorical variables & dummy encoding
-- [ ] Multicollinearity and VIF
-- [ ] Feature engineering for better fit
+- [ ] Multiple linear regression equation
+- [ ] Fitting and interpreting multiple regression models
+- [ ] Variable selection
+- [ ] Mean Error metrics
+- [ ] Adjusted R-Squared
 
 ### Module 6 — Model Assumptions
 - [ ] The assumptions of linear regression
