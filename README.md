@@ -23,7 +23,7 @@
 | **Course** | Python Data Science: Regression & Forecasting |
 | **Instructor** | Chris Bruehl — Lead Python Instructor, Maven Analytics |
 | **Platform** | Udemy |
-| **Duration** | ≈14.5 hours · _lectures: TBD_ |
+| **Duration** | ≈8.5 hours |
 | **Companion** | *Data Science in Python: Regression & Forecasting* ebook (230+ pages) |
 | **Case Studies** | Pricing-strategy engagement for *Maven Consulting Group* (role: Associate Data Scientist) |
 | **Part of** | [ml-engineering-bootcamp](https://github.com/MiltonValleL/ml-engineering-bootcamp) — Statistical Modeling Stack |
@@ -149,7 +149,7 @@ By the end of this course, you'll be able to:
 |---|---|
 | **Dataset** | San Francisco rental listings |
 | **Skills Applied** | EDA · linear regression · model assumptions · validation · feature engineering |
-| **Notebook** | `project-1-sf-rent-prices.ipynb` _(TBD)_ |
+| **Notebook** | `project-1-sf-rent-prices.ipynb` |
 | **Status** | ⏳ Pending |
 
 ---
@@ -170,7 +170,7 @@ By the end of this course, you'll be able to:
 |---|---|
 | **Dataset** | San Francisco rental listings |
 | **Skills Applied** | regularized regression · Ridge regression · Lasso regression · Elastic Net regression |
-| **Notebook** | `project-1.2-sf-rent-prices.ipynb` _(TBD)_ |
+| **Notebook** | `project-1.2-sf-rent-prices.ipynb` |
 | **Status** | ⏳ Pending |
 
 ---
@@ -191,7 +191,7 @@ By the end of this course, you'll be able to:
 |---|---|
 | **Scenario** | Forecasting electricity consumption |
 | **Skills Applied** | Time series EDA · regression forecasting · Prophet · forecast metrics |
-| **Notebook** | `project-2-forecasting.ipynb` _(TBD)_ |
+| **Notebook** | `project-2-forecasting.ipynb` |
 | **Status** | ⏳ Pending |
 
 <br><br>
@@ -294,34 +294,6 @@ conda activate regression-forecasting
 
 ---
 
-## Case Studies Summary
-
-### Case Study #1: Univariate Pricing Model
-**Role**: Associate Data Scientist · Maven Consulting Group
-**Challenge**: Build a first regression model to predict price from a single driver and interpret it rigorously.
-**Deliverables**: EDA, a fitted Statsmodels OLS model, coefficient interpretation, residual diagnostics.
-**Skills Practiced**: Exploratory analysis · simple linear regression · statistical interpretation.
-
----
-
-### Case Study #2: Multi-Factor Pricing Model
-**Role**: Associate Data Scientist · pricing strategy team
-**Challenge**: Explain and predict prices using many variables while avoiding overfitting.
-**Deliverables**: Multiple regression model, engineered features, Ridge/Lasso comparison, cross-validated results.
-**Skills Practiced**: Multiple regression · feature engineering · regularization · model validation.
-
----
-
-### Case Study #3: Demand/Price Forecasting
-**Role**: Associate Data Scientist · forecasting support
-**Challenge**: Forecast future values to inform pricing and planning decisions.
-**Deliverables**: Time series decomposition, a regression-based forecast, a Prophet forecast, and an accuracy comparison.
-**Skills Practiced**: Time series EDA · regression forecasting · Prophet · forecast evaluation.
-
-<br><br>
-
----
-
 ## Integration with ML Bootcamp
 
 This course is the **Statistical Modeling Stack** in the broader ML Engineering Bootcamp — the bridge from analysis to machine learning:
@@ -330,8 +302,9 @@ This course is the **Statistical Modeling Stack** in the broader ML Engineering 
 |---|---|---|---|
 | **1. Foundation** | Pandas_Bootcamp | Data manipulation, aggregation, reshaping | ✅ Complete |
 | **2. Visualization** | MatplotSea_Bootcamp | Visualization, reporting, storytelling | 🔄 In Progress |
-| **3. Modeling & Forecasting** | **Regression_Forecasting_Bootcamp** | Regression, regularization, time-series forecasting | 🔄 This repo |
-| **4. ML Foundations** | _TBD_ | Classification, pipelines, model selection | ⏳ Planned |
+| **3. ML Foundations** | **Regression-and-Forecasting** | Regression, regularization, time-series forecasting | 🔄 This repo |
+| **4. ML Foundations** | classification-modelling | Classification, pipelines, model selection | ⏳ Planned |
+| **5. ML Foundations** | unsupervised-ml | Clustering, anomaly detection, dimensionality reduction, recommenders | ⏳ Planned |
 
 > **Domain bridge**: Time-series forecasting is the same problem family as **electrical load forecasting** in power systems — a natural link between 13 years of electrical engineering and the [SIN project](https://github.com/MiltonValleL). *(Optional framing — remove if you'd rather keep this repo course-only.)*
 
