@@ -96,83 +96,100 @@ By the end of this course, you'll be able to:
 - [x] The regression modeling workflow (deep dive)
 - [x] Key assumptions behind linear regression
 
-### Module 3 — Simple (Univariate) Linear Regression
+### Module 3 — Pre-Modeling Data Prep & EDA
+- [ ] EDA for regression: exploring the target and the features
+- [ ] Linear relationships & correlation (and in Python)
+- [ ] Feature–target and feature–feature relationships
+- [ ] PRO TIP: pairplots & lmplots for visual EDA
+- [ ] Preparing the data for modeling
+
+### Module 4 — Simple (Univariate) Linear Regression
 - [ ] Fitting OLS with Statsmodels
 - [ ] Interpreting slope, intercept & R²
 - [ ] Reading p-values and confidence intervals
 - [ ] Residual analysis and assumption checks
 
-### 🏁 **CASE STUDY #1** — Univariate Pricing Model
-- [ ] Explore the pricing dataset
-- [ ] Build and interpret a single-predictor model
-- [ ] Diagnose residuals and model fit
-- [ ] **Deliverable**: univariate regression notebook
-
-| Case Study Details | |
-|---|---|
-| **Scenario** | Associate Data Scientist · Maven Consulting Group (pricing strategy) |
-| **Skills Applied** | EDA · Statsmodels OLS · coefficient interpretation · diagnostics |
-| **Notebook** | `case-1-univariate-regression.ipynb` _(TBD)_ |
-| **Status** | ⏳ Pending |
-
----
-
-### Module 4 — Multiple Linear Regression
+### Module 5 — Multiple Linear Regression
 - [ ] Fitting models with multiple predictors
 - [ ] Adjusted R² and model comparison
 - [ ] Categorical variables & dummy encoding
 - [ ] Multicollinearity and VIF
 - [ ] Feature engineering for better fit
 
-### Module 5 — Regularized Regression
-- [ ] Why regularization: the bias-variance tradeoff
-- [ ] Ridge (L2) regression
-- [ ] Lasso (L1) regression and feature selection
-- [ ] Elastic Net
-- [ ] Hyperparameter tuning (alpha) with cross-validation
+### Module 6 — Model Assumptions
+- [ ] The assumptions of linear regression
+- [ ] Linearity & independence of errors
+- [ ] Normality of errors + interpreting transformed targets
+- [ ] No perfect multicollinearity
+- [ ] Equal variance of errors (homoscedasticity)
+- [ ] Outliers, leverage & influence
 
-### 🏁 **CASE STUDY #2** — Multi-Factor Pricing Model
-- [ ] Build a multiple linear regression model
-- [ ] Engineer and select features
-- [ ] Apply Ridge/Lasso and compare performance
-- [ ] Validate with cross-validation
-- [ ] **Deliverable**: multi-factor pricing notebook
+### Module 7 — Model Testing & Validation
+- [ ] Model scoring steps & data splitting
+- [ ] Overfitting, underfitting & the bias-variance tradeoff
+- [ ] Validation data & model tuning
+- [ ] Model scoring
+- [ ] Cross-validation (simple vs. cross-validation)
 
-| Case Study Details | |
+### Module 8 — Feature Engineering
+- [ ] Feature engineering techniques
+- [ ] Polynomial terms, combining features & interaction terms
+- [ ] Categorical features & dummy variables
+- [ ] Binning categorical and numeric data
+
+### 🏁 **PROJECT #1** — San Francisco Rent Prices
+- [ ] Perform EDA on a modelling dataset
+- [ ] Split your data and choose a validation framework
+- [ ] Fit and tune a linear regression model by checking model assumptions and performing feature engineering
+- [ ] Interpret a linear regression model
+
+| Project Details | |
 |---|---|
-| **Scenario** | Pricing strategy — explaining & predicting prices across variables |
-| **Skills Applied** | Multiple regression · feature engineering · regularization · CV |
-| **Notebook** | `case-2-multiple-regression.ipynb` _(TBD)_ |
+| **Dataset** | San Francisco rental listings |
+| **Skills Applied** | EDA · linear regression · model assumptions · validation · feature engineering |
+| **Notebook** | `project-1-sf-rent-prices.ipynb` _(TBD)_ |
 | **Status** | ⏳ Pending |
 
 ---
 
-### Module 6 — Non-Linear Regression
-- [ ] Polynomial features and transformations
-- [ ] Modeling curvature without leaving linear models
-- [ ] Overfitting with high-degree polynomials
-- [ ] Choosing complexity with validation curves
+### Module 9 — Regularized Regression
+- [ ] Intro to regularized regression
+- [ ] Ridge (L2) regression, standarization & fitting a Ridge regression model
+- [ ] Lasso (L1) regression and feature selection
+- [ ] Elastic Net regression
+- [ ] Hyperparameter tuning (alpha) with cross-validation
 
-### Module 7 — Time Series Analysis & Forecasting
-- [ ] Exploring time series data (trend, seasonality, cycles)
-- [ ] Autocorrelation and its implications
-- [ ] Forecasting with linear regression
-- [ ] Non-linear trends and seasonality modeling
-- [ ] Forecasting with **Prophet**
-- [ ] Evaluating forecast accuracy
+### 🏁 **PROJECT #1** — San Francisco Rent Prices (Continued)
+- [ ] Fit Lasso, Ridge, and Elastic Net Regression models
+- [ ] Tune the models to the optimal regularization strength based on validation results
+- [ ] Select the model which has the highest accuracy on out of sample data
 
-### 🏁 **CASE STUDY #3** — Demand/Price Forecasting
-- [ ] Explore and decompose a time series
-- [ ] Build a regression-based forecast
-- [ ] Build a Prophet forecast and compare
-- [ ] Evaluate and communicate forecast uncertainty
+| Project Details | |
+|---|---|
+| **Dataset** | San Francisco rental listings |
+| **Skills Applied** | regularized regression · Ridge regression · Lasso regression · Elastic Net regression |
+| **Notebook** | `project-1.2-sf-rent-prices.ipynb` _(TBD)_ |
+| **Status** | ⏳ Pending |
+
+---
+
+### Module 10 — Time Series Analysis
+- [ ] Time series, moving averages and exponential smoothing
+- [ ] Decomposition, autocorrelation chart
+- [ ] Forecasting, linear regression with trend & season
+- [ ] Facebook Prophet
+
+### 🏁 **PROJECT #2** — Electricity Consumption
+- [ ] Explore and manipulate time series data
+- [ ] Perform time series data splitting
+- [ ] Build and compare the predictive accuracy of forecasting  models
 - [ ] **Deliverable**: forecasting notebook
 
 | Case Study Details | |
 |---|---|
-| **Scenario** | Forecasting future values to inform pricing/planning decisions |
+| **Scenario** | Forecasting electricity consumption |
 | **Skills Applied** | Time series EDA · regression forecasting · Prophet · forecast metrics |
-| **Notebook** | `case-3-forecasting.ipynb` _(TBD)_ |
+| **Notebook** | `project-2-forecasting.ipynb` _(TBD)_ |
 | **Status** | ⏳ Pending |
 
 <br><br>
