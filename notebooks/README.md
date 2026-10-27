@@ -85,7 +85,7 @@ It goes by many names — all of these mean the same thing:
 |---|---|
 | **Target** | $y$, *model output*, *response*, *dependent variable* |
 
-Regression helps us understand how the target is impacted by the features. In the diamonds example, **`price` is the target** — it is what we want to predict, and it is numerical, which is why regression (and not classification) is the right tool.
+`Regression helps us understand how the target is impacted by the features`. In the diamonds example, **`price` is the target** — it is what we want to predict, and it is numerical, which is why regression (*and not classification*) is the right tool.
 
 <br>
 
@@ -99,13 +99,13 @@ Again, one idea, many names:
 |---|---|
 | **Features** | $X$, *model inputs*, *predictors*, *independent variables* |
 
-Regression helps us understand how the features **impact**, or **predict**, the target. In the diamonds example, `carat`, `cut`, `color`, `clarity`, and the remaining columns are all **features**.
+**Regression helps us understand how the features impact, or predict, the target**. In the diamonds example, `carat`, `cut`, `color`, `clarity`, and the remaining columns are all **features**.
 
 <br>
 
 ### Seeing it in a table
 
-Think of a dataset as a table where each **row** is one observation (one diamond) and each **column** is a variable:
+Think of a dataset as a table where each **row** is one observation (*one diamond*) and each **column** is a variable:
 
 | carat | cut | color | clarity | depth | table | x | y | z | **price** |
 |---|---|---|---|---|---|---|---|---|---|
@@ -115,10 +115,10 @@ Think of a dataset as a table where each **row** is one observation (one diamond
 | 1.50 | Good | I | VVS2 | 63.3 | 58.0 | 7.24 | 7.27 | 4.59 | **9909** |
 | 1.27 | Very Good | I | SI2 | 59.7 | 57.0 | 6.99 | 7.04 | 4.19 | **5371** |
 
-- The **`price`** column (bold) is the **target** — numerical, so we use regression.
+- The **`price`** column (*bold*) is the **target** — numerical, so we use regression.
 - **All other columns** are **features** — they can help us explain, or predict, the price of a diamond.
 
-> **Note:** Here the lowercase column names `x`, `y`, `z` are physical diamond dimensions (*length, width, depth in mm*). Do not confuse them with the mathematical symbols $X$ (features) and $y$ (target) — an unfortunate but common naming clash.
+> **Note:** Here the lowercase column names `x`, `y`, `z` are physical diamond dimensions (*length, width, depth in mm*). Do not confuse them with the mathematical symbols $X$ (*features*) and $y$ (*target*) — an unfortunate but common naming clash.
 
 <br><br>
 
@@ -131,7 +131,7 @@ Regression works in two stages, and the distinction between them is the heart of
 
 <br>
 
-### Stage 1 — Training (learning from observed values)
+### Stage 1 — Training (*learning from observed values*)
 
 We take **records with observed values for both the features *and* the target** and use them to **"train"** the model. During training, the model has access to the right answers (`price`), so it can adjust itself to capture the relationship between the features and the target.
 
@@ -145,7 +145,7 @@ We take **records with observed values for both the features *and* the target** 
 
 <br>
 
-### Stage 2 — Prediction (applying to unobserved values)
+### Stage 2 — Prediction (*applying to unobserved values*)
 
 Then we apply the trained model to **new, unobserved values** — records that contain the **features but no target**:
 
@@ -191,28 +191,30 @@ Here we care about *explanation*: the direction and strength of each feature's e
 
 In practice you often need to **strike a balance** between the two:
 
-- A model that is **very inaccurate** won't be trustworthy for inference — if it predicts poorly, why believe its explanation of *why*?
+- A model that is **very inaccurate** won't be trustworthy for inference
 - And understanding the impact that variables have on predictions can help make those predictions **more accurate**.
 
-Prediction and inference are two ends of a spectrum, not a strict either/or. Knowing where your problem sits on that spectrum guides every decision that follows.
+`Prediction` and `inference` are two ends of a spectrum, not a strict either/or. Knowing where your problem sits on that spectrum guides every decision that follows.
 
 
 <br><br>
 
 ---
 
-## 5. Types of Regression (and Where Linear Regression Fits)
+## 5. Types of Regression (*and Where Linear Regression Fits*)
 
 "Regression" is a family of techniques, not a single algorithm. These are some of the major **types of regression** modeling techniques:
 
 | Type | What it does |
 |---|---|
 | **Linear Regression** | Models the relationship between the features and target using a **linear equation** (*a line / hyperplane*). |
-| **Regularized Regression** | An extension of linear regression that **penalizes model complexity** to reduce overfitting (e.g., Ridge, Lasso). |
-| **Time-Series Forecasting** | Predicts future data using **historical trends and seasonality** (the ordering of observations in time matters). |
-| **Tree-Based Regression** | **Splits the data** into groups by maximizing the difference between them (e.g., decision trees, random forests, gradient boosting). |
+| **Regularized Regression** | An extension of linear regression that **penalizes model complexity** to reduce overfitting (*e.g., Ridge, Lasso*). |
+| **Time-Series Forecasting** | Predicts future data using **historical trends and seasonality** (*the ordering of observations in time matters*). |
+| **Tree-Based Regression** | **Splits the data** into groups by maximizing the difference between them (*e.g., decision trees, random forests, gradient boosting*). |
 
 **Linear Regression** is where we focus next, and for good reason: it is the simplest, most interpretable member of the family, and the conceptual foundation on which the others build.
+
+<br>
 
 > ⚠️ **A classic gotcha:** even though **logistic regression** has *"regression"* in its name, it is actually a **classification** technique — it predicts a category, not a numeric value. The name is historical; the behavior is classification.
 
@@ -223,26 +225,31 @@ Prediction and inference are two ends of a spectrum, not a strict either/or. Kno
 
 ## 6. A Closer Look at Linear Regression
 
-This section goes slightly beyond the overview to build the core theory of linear regression itself.
-
 <br>
 
 ### 6.1 The model: a linear equation
 
-With a **single feature** (simple linear regression), the model is the equation of a straight line:
+With a **single feature** (*simple linear regression*), the model is the equation of a straight line:
 
-$$\hat{y} = \beta_0 + \beta_1 x$$
 
-- $\hat{y}$ (*read "y-hat"*) is the **predicted** target.
-- $x$ is the feature (e.g., `carat`).
-- $\beta_0$ is the **intercept** — the predicted value of $y$ when $x = 0$ (*where the line crosses the vertical axis*).
+$$\LARGE \hat{y} = \beta_0 + \beta_1 x$$
+
+
+- $\hat{y}$ (*"y-hat"*): is the **predicted** target.
+- $x$: is the feature (e.g., `carat`).
+- $\beta_0$ is the **intercept**: the predicted value of $y$ when $x = 0$ (*where the line crosses the vertical axis*).
 - $\beta_1$ is the **slope** — how much $\hat{y}$ changes for a one-unit increase in $x$. A positive $\beta_1$ means a positive relationship (*price rises with carat*).
 
-The symbols $\beta_0$ and $\beta_1$ are the model's **coefficients** (also called *parameters* or *weights*). **Training a linear regression means finding the values of these coefficients** that make the line fit the data best.
 
-With **multiple features** (multiple linear regression), the idea generalizes — each feature gets its own coefficient:
+The symbols $\beta_0$ and $\beta_1$ are the model's **coefficients** (*also called `parameters` or `weights`*).
 
-$$\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n$$
+> **Training a linear regression means finding the values of these coefficients** that make the line fit the data best.
+
+With **multiple features** (*multiple linear regression*), the idea generalizes — each feature gets its own coefficient:
+
+
+$$\LARGE \hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n$$
+
 
 Geometrically, a line in 2D becomes a flat **plane** in 3D and a **hyperplane** in higher dimensions, but the logic is unchanged: a weighted sum of the features, plus an intercept.
 
@@ -252,10 +259,13 @@ Geometrically, a line in 2D becomes a flat **plane** in 3D and a **hyperplane** 
 
 No line passes through every point. For each observation $i$, the gap between the **actual** value $y_i$ and the **predicted** value $\hat{y}_i$ is called the **residual** (*or error*):
 
-$$e_i = y_i - \hat{y}_i$$
+
+$$\LARGE e_i = y_i - \hat{y}_i$$
+
 
 - A residual of **0** means the line hit that point exactly.
-- A **positive** residual means the model *under-predicted*; a **negative** residual means it *over-predicted*.
+- A **positive** residual means the model *under-predicted*;
+- a **negative** residual means it *over-predicted*.
 
 The residuals are the vertical distances from each point to the line. Intuitively, a "good" line is one where these distances are **small overall**.
 
@@ -263,16 +273,18 @@ The residuals are the vertical distances from each point to the line. Intuitivel
 
 ### 6.3 "Best fit" = least squares
 
-How do we turn "small overall" into something precise? Linear regression's classic answer is the method of **Ordinary Least Squares (OLS)**: choose the coefficients that **minimize the Sum of Squared Residuals (SSR)**:
+**How do we turn "small overall" into something precise?** Linear regression's classic answer is the method of `Ordinary Least Squares (OLS)`: choose the coefficients that **minimize the Sum of Squared Residuals (SSR)**:
 
-$$\text{SSR} = \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 = \sum_{i=1}^{m} \big(y_i - (\beta_0 + \beta_1 x_i)\big)^2$$
+
+$$\LARGE \text{SSR} = \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 = \sum_{i=1}^{m} \big(y_i - (\beta_0 + \beta_1 x_i)\big)^2$$
+
 
 Why **square** the residuals instead of just adding them?
 
 - **Squaring removes the sign**, so positive and negative errors don't cancel out. (*Simply summing raw residuals could give zero for a terrible line*)
 - **Squaring penalizes large errors more than small ones** — being off by 10 costs far more than being off by 1 (100 vs. 1). The line is therefore pushed to avoid big misses.
 
-This quantity we minimize is called a **cost function** (or *loss function*): a single number that measures how badly the model fits, which training tries to make as small as possible. Finding the line of best fit is an **optimization problem** — searching for the coefficients that sit at the bottom of this cost.
+This quantity we minimize is called a `cost function` (or *loss function*): a single number that measures how badly the model fits, which training tries to make as small as possible. Finding the line of best fit is an **optimization problem** — searching for the coefficients that sit at the bottom of this cost.
 
 > **Where this goes next (optional deep dive):** there are two standard ways to *actually* find those optimal coefficients — solving the **normal equations** directly with linear algebra (*a closed-form matrix solution*), or iteratively with **gradient descent**. Both are beyond this introduction, but each follows naturally from the cost function above.
 
@@ -280,7 +292,12 @@ This quantity we minimize is called a **cost function** (or *loss function*): a 
 
 ### 6.4 A brief word on assumptions
 
-Linear regression is at its most trustworthy — especially for **inference** — when certain assumptions roughly hold: the relationship is approximately **linear**, the residuals are **independent**, have **constant variance**, and are **roughly normally distributed**. You do not need to master these yet; just keep in the back of your mind that the clean theory above comes with conditions, and that checking them is part of *Model Evaluation* in the workflow below.
+Linear regression is at its most trustworthy — especially for **inference** — when certain assumptions roughly hold: the relationship is approximately **linear**, the residuals are **independent**, have **constant variance**, and are **roughly normally distributed**.
+
+You do not need to master these yet; just keep in the back of your mind that the clean theory above comes with conditions, and that checking them is part of *Model Evaluation* in the workflow below.
+
+
+<br><br>
 
 ---
 
@@ -297,7 +314,7 @@ Stages 2–5 are iterative (*the arrows go both ways*) — you loop back as you 
 
 | Sub-step | Purpose | Involves |
 |---|---|---|
-| **1. Preparing for Modeling** | Get the data ready to feed into an ML algorithm | Single clean table (non-null), *feature engineering*, data splitting |
+| **1. Preparing for Modeling** | Get the data ready to feed into an ML algorithm | Single clean table (*non-null*), feature engineering, data splitting |
 | **2. Applying Algorithms** | Build regression models from the training data | Linear regression, regularized regression, time series |
 | **3. Model Evaluation** | Evaluate model fit on training & validation data | R-squared & MAE, checking assumptions, validation performance |
 | **4. Model Selection** | Pick the best model to deploy and extract insights | Test performance, interpretability |
@@ -312,7 +329,7 @@ Steps 1–3 form a **loop**: evaluation results send you back to prepare better 
 
 >- **Regression** is a *supervised learning* technique for predicting a *numeric* **target** ($y$) from one or more **features** ($X$).
 >
->- The same two ideas have many names: *target / response / dependent variable* and *features / predictors / independent variables*. Learn them — you will meet all of them.
+>- The same two ideas have many names: *target / response / dependent variable* and *features / predictors / independent variables*.
 >
 >- A model **trains** on observed data (*features **and** target*), then **predicts** the target for new, unobserved data (*features only*). Usefulness comes from **generalizing** to unseen data.
 >
@@ -320,10 +337,11 @@ Steps 1–3 form a **loop**: evaluation results send you back to prepare better 
 >
 >- **Linear regression** is the simplest member of the regression family: it fits a straight line (*or hyperplane*) by choosing coefficients that **minimize the sum of squared residuals** (*least squares*).
 >
+>- Modeling is one stage of a larger, **iterative** workflow: *scope → gather → clean → explore → model → share*.
+>
 >- Beware the naming trap: **logistic regression is classification**, not regression.
 >
->- Modeling is one stage of a larger, **iterative** workflow: *scope → gather → clean → explore → model → share*.
 
 ---
 
-*This README is a theoretical primer. The natural next steps are a hands-on notebook (fitting a real line to the diamonds data) and a deeper dive into how the optimal coefficients are computed — the **normal equations** and **gradient descent**.*
+*This README is a theoretical primer. The natural next steps are a hands-on notebook (fitting a real data) and a deeper dive into how the optimal coefficients are computed — the **normal equations** and **gradient descent**.*
