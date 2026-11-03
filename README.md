@@ -97,11 +97,11 @@ By the end of this course, you'll be able to:
 - [x] Key assumptions behind linear regression
 
 ### Module 3 — Pre-Modeling Data Prep & EDA
-- [ ] EDA for regression: exploring the target and the features
-- [ ] Linear relationships & correlation (and in Python)
-- [ ] Feature–target and feature–feature relationships
-- [ ] PRO TIP: pairplots & lmplots for visual EDA
-- [ ] Preparing the data for modeling
+- [x] EDA for regression: exploring the target and the features
+- [x] Linear relationships & correlation (and in Python)
+- [x] Feature–target and feature–feature relationships
+- [x] PRO TIP: pairplots & lmplots for visual EDA
+- [x] Preparing the data for modeling
 
 ### Module 4 — Simple (Univariate) Linear Regression
 - [ ] Simple linear regression overview
