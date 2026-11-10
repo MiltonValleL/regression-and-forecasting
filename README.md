@@ -104,12 +104,12 @@ By the end of this course, you'll be able to:
 - [x] Preparing the data for modeling
 
 ### Module 4 — Simple (Univariate) Linear Regression
-- [ ] Simple linear regression overview
-- [ ] Least squared error
-- [ ] Linear regression in Python and in Statsmodels
-- [ ] Interpreting the model, making predictions
-- [ ] R-Squared, Hipothesis Test, F-Test
-- [ ] Coefficient estimates & P-Values, residual plots
+- [x] Simple linear regression overview
+- [x] Least squared error
+- [x] Linear regression in Python and in Statsmodels
+- [x] Interpreting the model, making predictions
+- [x] R-Squared, Hipothesis Test, F-Test
+- [x] Coefficient estimates & P-Values, residual plots
 
 ### Module 5 — Multiple Linear Regression
 - [ ] Multiple linear regression equation
