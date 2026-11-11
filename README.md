@@ -112,11 +112,11 @@ By the end of this course, you'll be able to:
 - [x] Coefficient estimates & P-Values, residual plots
 
 ### Module 5 — Multiple Linear Regression
-- [ ] Multiple linear regression equation
-- [ ] Fitting and interpreting multiple regression models
-- [ ] Variable selection
-- [ ] Mean Error metrics
-- [ ] Adjusted R-Squared
+- [x] Multiple linear regression equation
+- [x] Fitting and interpreting multiple regression models
+- [x] Variable selection
+- [x] Mean Error metrics
+- [x] Adjusted R-Squared
 
 ### Module 6 — Model Assumptions
 - [ ] The assumptions of linear regression
